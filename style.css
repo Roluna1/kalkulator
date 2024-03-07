@@ -7,7 +7,7 @@ body{
   align-items: center;
   height: 100vh;
   background-image: linear-gradient(180deg, rgb(236, 211, 157), #FDAC73);
-  margin: 0 50px;
+  margin: 0 20px;
 }
 .calcu-body{
   display: flex;
