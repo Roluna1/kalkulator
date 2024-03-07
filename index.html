@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calcu-body">
+    <input type="text" class="input-display-calcu" readonly>
+  <div class="calcu-buttons">
+  <button onclick="clearNumber();" class="button-operators">AC</button>
+  <button onclick="numberSlice();" class="button-operators">DEL</button>
+  <button onclick="calculatePercentage()" class="button-operators">%</button>
+  <button onclick="displayNumber('/');" class="button-operators">/</button>
+  <button onclick="displayNumber('7');" class="button-1">7</button>
+  <button onclick="displayNumber('8');" class="button-1">8</button>
+  <button onclick="displayNumber('9');" class="button-1">9</button>
+  <button onclick="displayNumber('*');" class="button-operators">x</button>
+  <button onclick="displayNumber('4');" class="button-1">4</button>
+  <button onclick="displayNumber('5');" class="button-1">5</button>
+  <button onclick="displayNumber('6');" class="button-1">6</button>
+  <button onclick="displayNumber('-');" class="button-operators">-</button>
+  <button onclick="displayNumber('1');" class="button-1">1</button>
+  <button onclick="displayNumber('2');" class="button-1">2</button>
+  <button onclick="displayNumber('3');" class="button-1">3</button>
+  <button onclick="displayNumber('+');" class="button-operators">+</button>
+  </div>
+  <div class="calcu-footer">
+  <button onclick="displayNumber('0');" class="button-1">0</button>
+  <button onclick="displayNumber('.');" class="button-1">.</button>
+  <button onclick="calculate()" class="button-operators-equal-1">=</button>
+</div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
