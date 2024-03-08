@@ -1,5 +1,6 @@
 *{
   margin: 0;
+  transition: all .3s;
 }
 body{
   display: flex;
@@ -7,58 +8,59 @@ body{
   align-items: center;
   height: 100vh;
   background-image: linear-gradient(180deg, rgb(236, 211, 157), #FDAC73);
-  margin: 0 20px;
+  
 }
 .calcu-body{
   display: flex;
   flex-direction: column;
-  border-radius: 20px;
-  width: 100%;
-  max-width: 450px;
   background-color: #243441;
-  padding: 80px 10px 0px 10px;
-
+  height: 100%;
+  max-height: 700px;
+  width: 100%;
+  max-width: 500px;
+  padding: 40px 5px 10px 5px;
+  border-radius: 30px;
+  margin: 30px;
 }
 .input-display-calcu{
   color: white;
-  font-size: 60px;
-  margin-bottom: 30px;
+  font-size: 50px;
+  width: calc(100% - 8px);
   background-color: transparent;
   border: none;
+  margin-bottom: 50px;
+  text-align: right;
 }
 .calcu-buttons{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  height: 100%;
 }
 .calcu-footer{
   display: grid;
+  height: 25%;
   grid-template-columns: 1fr 1fr 2fr;
 }
-
 .button-1, .button-operators, .button-operators-equal-1{
   color: white;
+  font-size: 100%;
+  max-height: 100px;
+  height: 100%;
+  margin: 10px;
   border: none;
   border-radius: 10px;
-  margin: 5px;
   background-color: transparent;
-  box-shadow: 0px -1px 0px rgb(95, 95, 95), 0px 1px 0 rgb(95, 95, 95);
-  font-size: 25px;
-  height: 100px;
+  box-shadow: 0px 1px 1px grey, 0px -1px 0px  grey;
 }
 .button-operators{
   color: orange;
 }
 .button-operators-equal-1{
-  font-size: 40px;
+  color: white;
   background-color: orange;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-height: 760px)  {
   *{
-   .button-1, .button-operators, .button-operators-equal-1{
-  font-size: 18px;
-  height: 75px;
+    transform: scale(.95);
+  }
 }
-  } 
-}
-
-
